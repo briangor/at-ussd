@@ -4,6 +4,10 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get('/', (req, res) => {
+    res.send("App is running");
+});
+
 app.post('/', (req, res) => {
     // Extract the POST data sent by AT gateway
     const sessionId = req.body.sessionId;
