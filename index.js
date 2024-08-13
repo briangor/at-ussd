@@ -15,7 +15,7 @@ app.post('/', (req, res) => {
     const phoneNumber = req.body.phoneNumber;
     const text = req.body.text;
 
-    let response = '';
+    let response = ''; 
 
     if (text === "") {
         // First request
