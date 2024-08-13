@@ -20,7 +20,7 @@ app.post('/', (req, res) => {
     if (text === "") {
         // First request
         response = "CON What would you want to check \n";
-        response += "1. My Account Number \n";
+        response += "1. My Account \n";
         response += "2. My Phone Number \n";
     } else if (text === "1") {
         // First level response
@@ -38,10 +38,10 @@ app.post('/', (req, res) => {
     } else if (text === "1*2") {
         const balance = "KES 887,650,000";
         response = `END Your balance is ${balance}`;
-    } else if (text === "0") {
+    } else if (text === "1*0") {
         // Go back to the main menu
         response = "CON What would you want to check \n";
-        response += "1. My Account Number \n";
+        response += "1. My Account \n";
         response += "2. My Phone Number \n";
     }
 
