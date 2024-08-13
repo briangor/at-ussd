@@ -36,7 +36,7 @@ app.post('/', (req, res) => {
         const accountNumber = "ACC1001";
         response = `END Your account number is ${accountNumber}`;
     } else if (text === "1*2") {
-        const balance = "KES 10,000";
+        const balance = "KES 887,650,000";
         response = `END Your balance is ${balance}`;
     } else if (text === "0") {
         // Go back to the main menu
